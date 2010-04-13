@@ -1,0 +1,26 @@
+.TH gnome-dupload 1 "27 August 2005"
+.SH NAME
+gnome-dupload \- wrapper around dupload(1) for GNOME packaging
+.SH SYNOPSIS
+\&\fBdupload\fR [\fIoptions\fR] [\fIchanges_file\fR | \fIdir\fR]
+.SH DESCRIPTION
+.B gnome-dupload
+is a tool aimed at making GNOME packaging easier. It is used to upload packages
+to the Debian archive, by using dupload(1). It performs a number of additionnal
+checks before uploading.
+.TP
+For a description of the options, please see the dupload(1) manpage.
+.SH CHECKS
+Here are the checks performed by gnome-dupload.
+.TP
+.BI "Target distribution"
+Checks that the target distribution is valid and asks for confirmation if not unstable
+.TP
+.BI "Broken dependencies"
+Checks that all dependencies are available, and that the package is not build
+against experimental libs if uploading to unstable.
+.SH "AUTHOR/COPYRIGHT"
+This manpage was written by Clement Stenac <zorglub@debian.org> for the Debian project,
+but may be used by others.
+.SH "SEE ALSO"
+.BR dupload(1)

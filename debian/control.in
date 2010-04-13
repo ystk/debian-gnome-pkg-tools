@@ -1,0 +1,21 @@
+Source: gnome-pkg-tools
+Section: devel
+Priority: optional
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends: cdbs,
+               debhelper (>= 5)
+Build-Depends-Indep: xmlto
+Standards-Version: 3.8.4
+
+Package: gnome-pkg-tools
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: svn-buildpackage
+Description: Tools for the Debian GNOME Packaging Team
+ This package contains some useful tools for the Debian GNOME Packaging Team
+ including:
+   * Documentation.
+   * The list of team members.
+   * A number of rules files for CDBS that are helpful for GNOME 
+     packages - but may also be useful for others.
