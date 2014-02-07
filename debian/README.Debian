@@ -52,7 +52,7 @@ to a minimum.
 
 You can browse it online at:
 
-http://svn.debian.org/wsvn/pkg-gnome
+http://anonscm.debian.org/viewvc/pkg-gnome/
 
 To "checkout" the repository use these commands:
         $ svn co        \
@@ -182,6 +182,6 @@ the queue is processed every 10 minutes
 
 --------------------------------------------------------------------------------
 
-$Id: README.Debian 11826 2007-07-05 18:27:23Z lool $
+$Id: README.Debian 30528 2011-10-15 00:40:05Z jordi $
 
  -- Sebastien Bacher <seb128@debian.org>, Thu Jun 17 17:28:30 2004

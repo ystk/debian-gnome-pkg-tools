@@ -7,16 +7,19 @@ Source: gnome-pkg-tools
 Section: devel
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Andrea Veri <and@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Josselin Mouette <joss@debian.org>, Julian Andres Klode <jak@debian.org>, Kilian Krause <kilian@debian.org>, Laurent Bigonville <bigon@debian.org>, Loïc Minier <lool@dooz.org>, Luca Falavigna <dktrkranz@debian.org>
+Uploaders: Andrea Veri <and@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Jordi Mallach <jordi@debian.org>, Josselin Mouette <joss@debian.org>, Loïc Minier <lool@debian.org>
 Build-Depends: cdbs,
-               debhelper (>= 5)
+               debhelper (>= 9)
 Build-Depends-Indep: xmlto
-Standards-Version: 3.8.4
+Standards-Version: 3.9.3
+Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/tools/gnome-pkg-tools
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/tools/gnome-pkg-tools/
 
 Package: gnome-pkg-tools
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ${perl:Depends}
 Recommends: svn-buildpackage
+Multi-Arch: foreign
 Description: Tools for the Debian GNOME Packaging Team
  This package contains some useful tools for the Debian GNOME Packaging Team
  including:

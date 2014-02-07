@@ -204,21 +204,6 @@
         is recomended for the move of schemas to <filename>/usr/share/gconf/schemas</filename>.
       </para>
     </sect1>
-    <sect1>
-      <title>Use of Scrollkeeper</title>
-      <para>
-        If user documentation exists, and an OMF file is provided, the package must depend on
-        <varname>scrollkeeper (>=
-          0.3.8)</varname>, and update the ScrollKeeper database in the
-        maintainer scripts.  Again, CDBS with the <literal>gnome</literal> class does this
-        automatically, but otherwise call <filename>dh_scrollkeeper</filename> in the relevant
-        <literal>binary-</literal> target.
-      </para>
-      <para>
-        If you use <filename>dh_scrollkeeper</filename>, you must depend on
-        <filename>debhelper</filename> 4.2.1 or higher.
-      </para>
-    </sect1>
   </chapter>
 
   <chapter>

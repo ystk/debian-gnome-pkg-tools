@@ -7,14 +7,14 @@ DEB_UPSTREAM_VERSION ?= $(shell echo $(DEB_NOEPOCH_VERSION) | sed 's/-[^-]*$$//'
 DEB_SOURCE_PACKAGE_INITIAL ?= $(shell echo $(DEB_SOURCE_PACKAGE) | cut -c 1)
 
 # where to store the resulting .orig tarball
-DEB_TARBALL_DOWNLOAD_DIR ?= ../tarballs
+DEB_TARBALL_DOWNLOAD_DIR ?= .
 
 UBUNTU_COMPONENT ?= main
 # defaults to non-native; you don't need to set this as both are tried
 UBUNTU_NATIVE ?=
 UBUNTU_DOWNLOAD_URL ?= http://archive.ubuntu.com/ubuntu/pool/$(UBUNTU_COMPONENT)/$(DEB_SOURCE_PACKAGE_INITIAL)/$(DEB_SOURCE_PACKAGE)/$(DEB_SOURCE_PACKAGE)_$(DEB_UPSTREAM_VERSION)$(if $(filter 1 true yes,$(UBUNTU_NATIVE)),,.orig).tar.gz
 
-UBUNTU_DOWNLOAD_COMMAND ?= wget -N -nv -T10 -t1 -O $(DEB_TARBALL_DOWNLOAD_DIR)/$(DEB_SOURCE_PACKAGE)_$(DEB_UPSTREAM_VERSION).orig.tar.gz $(UBUNTU_DOWNLOAD_URL)
+UBUNTU_DOWNLOAD_COMMAND ?= wget -N -T10 -t1 -O $(DEB_TARBALL_DOWNLOAD_DIR)/$(DEB_SOURCE_PACKAGE)_$(DEB_UPSTREAM_VERSION).orig.tar.gz $(UBUNTU_DOWNLOAD_URL)
 
 get-orig-source:
 	dh_testdir
