@@ -1,3 +1,19 @@
+gnome-pkg-tools (0.19.4) unstable; urgency=low
+
+  [ Iain Lane ]
+  * Add Iain Lane <laney@debian.org> to the team list 
+
+  [ Jackson Doak ]
+  * debian/copyright: Use debian format 1.0
+  * debian/control.in: Use canonical vcs url
+
+  [ Dmitry Shachnev ]
+  * Do not insert blank line after control header (closes: #684503).
+  * Add myself to the list of team members.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 03 Sep 2014 18:01:59 +0400
+
 gnome-pkg-tools (0.19.3) unstable; urgency=low
 
   * Add Martin Pitt <mpitt@debian.org> and Jeremy Bicha <jbicha@ubuntu.com>
